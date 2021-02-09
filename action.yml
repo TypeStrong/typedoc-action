@@ -1,0 +1,18 @@
+name: 'Typedoc'
+description: 'Render typedoc and publish to Github Pages'
+inputs:
+  publish-branch:
+    # description: 'Who to greet'
+    required: false
+    default: 'gh-pages'
+  publish-dir:
+    # description: 'Who to greet'
+    required: false
+    default: '/'
+  args:
+    description: 'Additional CLI args passed to typedoc'
+    required: false
+    default: ''
+runs:
+  using: 'node14'
+  main: 'dist-bundle/index.js'
